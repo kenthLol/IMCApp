@@ -8,33 +8,8 @@ using static Android.Renderscripts.Sampler;
 namespace IMCApp
 {
     [Activity(Label = "@string/app_name", MainLauncher = true)]
-    public class MainActivity : Activity
+    public partial class MainActivity : Activity
     {
-        private bool isMaleSelected = false;
-        private bool isFemaleSelected = false;
-        private int currentWeight = 60;
-        private int currentHeight = 120;
-        private int currentAge = 20;
-
-        const string IMC_KEY = "IMC_RESULT";
-
-        private CardView viewMale = default!;
-        private CardView viewFemale = default!;
-
-        private TextView tvHeight = default!;
-        private RangeSlider rsHeight = default!;
-
-        private FloatingActionButton btnSubtractWeight = default!;
-        private FloatingActionButton btnAddWeight = default!;
-        private TextView tvWeight = default!;
-
-        private FloatingActionButton btnSubtractAge = default!;
-        private FloatingActionButton btnAddAge = default!;
-        private TextView tvAge = default!;
-
-        private Button btnCalculate = default!;
-
-
         protected override void OnCreate(Bundle? savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -49,21 +24,21 @@ namespace IMCApp
 
         private void InitComponents()
         {
-            viewMale = FindViewById<CardView>(Resource.Id.viewMale)!;
-            viewFemale = FindViewById<CardView>(Resource.Id.viewFemale)!;
+            viewMale = FindViewById<CardView>(Resource.Id.view_male)!;
+            viewFemale = FindViewById<CardView>(Resource.Id.view_female)!;
 
-            tvHeight = FindViewById<TextView>(Resource.Id.tvHeight)!;
-            rsHeight = FindViewById<RangeSlider>(Resource.Id.rsHeight)!;
+            tvHeight = FindViewById<TextView>(Resource.Id.tv_height)!;
+            rsHeight = FindViewById<RangeSlider>(Resource.Id.rs_height)!;
 
-            btnSubtractWeight = FindViewById<FloatingActionButton>(Resource.Id.btnSubtractWeight)!;
-            btnAddWeight = FindViewById<FloatingActionButton>(Resource.Id.btnPlusWeight)!;
-            tvWeight = FindViewById<TextView>(Resource.Id.tvWeight)!;
+            btnSubtractWeight = FindViewById<FloatingActionButton>(Resource.Id.btn_subtract_weight)!;
+            btnAddWeight = FindViewById<FloatingActionButton>(Resource.Id.btn_plus_weight)!;
+            tvWeight = FindViewById<TextView>(Resource.Id.tv_weight)!;
 
-            btnSubtractAge = FindViewById<FloatingActionButton>(Resource.Id.btnSubtractAge)!;
-            btnAddAge = FindViewById<FloatingActionButton>(Resource.Id.btnPlusAge)!;
-            tvAge = FindViewById<TextView>(Resource.Id.tvAge)!;
+            btnSubtractAge = FindViewById<FloatingActionButton>(Resource.Id.btn_subtract_age)!;
+            btnAddAge = FindViewById<FloatingActionButton>(Resource.Id.btn_plus_age)!;
+            tvAge = FindViewById<TextView>(Resource.Id.tv_age)!;
 
-            btnCalculate = FindViewById<Button>(Resource.Id.btnCalculate)!;
+            btnCalculate = FindViewById<Button>(Resource.Id.btn_calculate)!;
         }
 
         private void InitEvents()

@@ -9,7 +9,7 @@
     tools:context=".ResultImcActivity">
 
     <TextView
-        android:id="@+id/tvTitle"
+        android:id="@+id/tv_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -26,10 +26,10 @@
         android:layout_marginVertical="32dp"
         app:cardBackgroundColor="@color/background_component"
         app:cardCornerRadius="16dp"
-        app:layout_constraintBottom_toTopOf="@+id/btnRecalculate"
+        app:layout_constraintBottom_toTopOf="@+id/btn_recalculate"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvTitle">
+        app:layout_constraintTop_toBottomOf="@+id/tv_title">
 
         <androidx.appcompat.widget.LinearLayoutCompat
             android:layout_width="match_parent"
@@ -39,7 +39,7 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/tvResult"
+                android:id="@+id/tv_result"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="26sp"
@@ -47,7 +47,7 @@
                 tools:text="Normal" />
 
             <TextView
-                android:id="@+id/tvIMC"
+                android:id="@+id/tv_imc"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginVertical="64dp"
@@ -57,7 +57,7 @@
                 tools:text="Normal" />
 
             <TextView
-                android:id="@+id/tvDescription"
+                android:id="@+id/tv_description"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="26sp"
@@ -70,7 +70,7 @@
     </androidx.cardview.widget.CardView>
 
     <Button
-        android:id="@+id/btnRecalculate"
+        android:id="@+id/btn_recalculate"
         android:layout_width="0dp"
         android:layout_height="80dp"
         android:text="Recalcular"

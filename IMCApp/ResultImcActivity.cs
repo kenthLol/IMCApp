@@ -71,9 +71,9 @@ public class ResultImcActivity : Activity
 
     private void InitComponents()
     {
-        tvResult = FindViewById<TextView>(Resource.Id.tvResult)!;
-        tvDescription = FindViewById<TextView>(Resource.Id.tvDescription)!;
-        tvIMC = FindViewById<TextView>(Resource.Id.tvIMC)!;
-        btnRecalculate = FindViewById<Button>(Resource.Id.btnRecalculate)!;
+        tvResult = FindViewById<TextView>(Resource.Id.tv_result)!;
+        tvDescription = FindViewById<TextView>(Resource.Id.tv_description)!;
+        tvIMC = FindViewById<TextView>(Resource.Id.tv_imc)!;
+        btnRecalculate = FindViewById<Button>(Resource.Id.btn_recalculate)!;
     }
 }
